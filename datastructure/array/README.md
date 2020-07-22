@@ -12,7 +12,7 @@
 
 `a[i]_address = base_address + i * data_type_size`
 
-思考🤔
+思考 🤔
 
 `为何大多编程语言数组下标从 0 开始？`
 
@@ -33,26 +33,26 @@
 
 ## 练习
 
-1）[实现数组，支持增删改查操作](https://github.com/lzle/algorithm/blob/master/datastructure/array/array.go)
+1）[实现数组，支持增删改查操作](https://github.com/lzle/algorithm/blob/master/datastructure/array/array.go) :lemon:
 
-2）[两数之和](https://github.com/lzle/leetcode/tree/master/note/1) 
+2）[两数之和](https://github.com/lzle/leetcode/tree/master/note/1) :green_apple:
 
-3）[三数之和](https://github.com/lzle/leetcode/tree/master/note/15)
+3）[三数之和](https://github.com/lzle/leetcode/tree/master/note/15)  :lemon:
 
-4）[求众数](https://github.com/lzle/leetcode/tree/master/note/169)
+4）[求众数](https://github.com/lzle/leetcode/tree/master/note/169)  :green_apple:
 
-5）[3 和 5 的倍数](https://github.com/lzle/leetcode/tree/master/note/412)
+5）[3 和 5 的倍数](https://github.com/lzle/leetcode/tree/master/note/412)  :green_apple:
 
-6）[合并两个有序数组](https://github.com/lzle/leetcode/tree/master/note/88)
+6）[合并两个有序数组](https://github.com/lzle/leetcode/tree/master/note/88)  :green_apple:
 
-7）[缺失的第一个正数](https://github.com/lzle/leetcode/tree/master/note/41)
+7）[缺失的第一个正数](https://github.com/lzle/leetcode/tree/master/note/41)  :apple:
 
-8）[数组中的第K个最大元素](https://github.com/lzle/leetcode/tree/master/note/215)
+8）[数组中的第K个最大元素](https://github.com/lzle/leetcode/tree/master/note/215)  :lemon:
 
-9）[数组中只出现一次的数](https://github.com/lzle/leetcode/tree/master/note/136)
+9）[数组中只出现一次的数](https://github.com/lzle/leetcode/tree/master/note/136) :green_apple:
 
-10）[数组中重复的数据](https://github.com/lzle/leetcode/tree/master/note/442)
+10）[数组中重复的数据](https://github.com/lzle/leetcode/tree/master/note/442)  :lemon:
 
-11）[下一个排列](https://github.com/lzle/leetcode/tree/master/note/31)
+11）[下一个排列](https://github.com/lzle/leetcode/tree/master/note/31)  :lemon:
 
 
