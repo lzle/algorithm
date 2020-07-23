@@ -54,17 +54,21 @@
 
 3）[实现循环链表]() :apple:
 
-4）[单链表反转](https://github.com/lzle/leetcode/tree/master/note/206) green_apple:
+4）[单链表LRU缓存]() :green_apple:
 
-5）[链表中环的检测](https://github.com/lzle/leetcode/tree/master/note/141) :green_apple:
+5）[回文字符串]() :green_apple:
 
-6）[两个有序的链表合并](https://github.com/lzle/leetcode/tree/master/note/21)  :green_apple:
+6）[单链表反转](https://github.com/lzle/leetcode/tree/master/note/206) :green_apple:
 
-7）[删除链表倒数第 n 个结点](https://github.com/lzle/leetcode/tree/master/note/19)  :lemon:
+7）[链表中环的检测](https://github.com/lzle/leetcode/tree/master/note/141) :green_apple:
 
-8）[求链表的中间结点](https://github.com/lzle/leetcode/tree/master/note/876)  :green_apple:
+8）[两个有序的链表合并](https://github.com/lzle/leetcode/tree/master/note/21)  :green_apple:
 
-9）[合并 k 个排序链表](https://github.com/lzle/leetcode/tree/master/note/23)  :apple:
+9）[删除链表倒数第 n 个结点](https://github.com/lzle/leetcode/tree/master/note/19)  :lemon:
+
+10）[求链表的中间结点](https://github.com/lzle/leetcode/tree/master/note/876)  :green_apple:
+
+11）[合并 k 个排序链表](https://github.com/lzle/leetcode/tree/master/note/23)  :apple:
 
 
 ## 补充
