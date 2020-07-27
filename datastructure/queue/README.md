@@ -58,7 +58,7 @@
 
 4）[设计一个双端队列](https://github.com/lzle/leetcode/tree/master/note/641) :lemon:
 
-4）[滑动窗口最大值](https://github.com/lzle/leetcode/tree/master/note/206) :apple:
+4）[滑动窗口最大值](https://github.com/lzle/leetcode/tree/master/note/239) :apple:
 
 
 ## 解答
