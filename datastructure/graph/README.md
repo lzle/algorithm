@@ -44,9 +44,9 @@
 
 ## 练习
 
-1）[深度优先]() :apple:
+1）[深度优先](https://github.com/lzle/algorithm/blob/master/datastructure/graph/graph.go) :apple:
 
-2）[广度优先]() :apple:
+2）[广度优先](https://github.com/lzle/algorithm/blob/master/datastructure/graph/graph.go) :apple:
 
 ## 解答
 
