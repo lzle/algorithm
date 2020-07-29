@@ -102,6 +102,8 @@ func binarySearch(s []int, v int) int{
 
 #### 查找最后一个小于等于给定值的元素
 
+`最后一个值等于给定值`
+
 ``` Go
 func binarySearch(s []int, v int) int {
     low := 0
