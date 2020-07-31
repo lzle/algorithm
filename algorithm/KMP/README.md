@@ -94,11 +94,59 @@ KMP 算法也是这么去做的，用 `next 数组`存储每个前缀（这些�
 最终问题变成，在 `b[0,4]` 中寻找 `最长匹配前缀字符串` 的 `最长匹配前缀字符串`，如果存在，查到的字符就是 `b[0,4]` 的 `好前缀`，然后取模式串的 `好前缀`
 的下一个字符与 `b[4]` 进行比较。如果不存在，则查 `最长匹配前缀字符串` 的 `最长匹配前缀字符串` 的 `最长匹配前缀字符串`（晕了），直到最后无解，`next[4] = -1`。
 
-好好消化一下。整体的思想就是假定 `next[i] = k`，如果下一个字符 `b[i+1] = b[k+1]`,则 `next[i+1] = k+1`。
+好好消化一下。整体的思想就是假定 `next[i] = k`，如果下一个字符 `b[i+1] = b[k+1]`,则 `next[i+1] = k + 1`。
 当 `b[i+1] ≠ b[k+1]` ,需要求满足 `next[i] = k` 这个公式的新的 `i、k` 值。我们的目的就是求 `b[0,i+1]` 的`好前缀`，找到`好前缀`后再匹配下一个字符 `b[i+1]`。
 
 
+### 代码
 
+``` Go
+// KMP 算法，返回匹配字符串下班
+// a, b分别是主串和模式串；n, m分别是主串和模式串的长度。
+// 移动模式串
+func kmp(a string, n int, b string, m int) int {   
+    next := initNext(b, m)
+    var j int
+    for i := 0; i < n; i++ {
+    	for j >0 && a[i] != b[j] {
+    		j = next[j-1] + 1
+    	}
+    	if a[i] == b[j] {
+    		j++
+    	}
+    	if j == m {
+    		return i - m + 1
+    	}   
+    }
+    return -1
+}
+
+// 初始化失效函数 next 数组
+// b表示模式串，m表示模式串的长度
+func initNext(b string, m int) []int {
+    next := make([]int, m)
+    next[0] = -1 
+    // 最长匹配字符串最后下标 
+    k := -1
+    for i := 1; i < m; i++ {
+    	for k != -1 && b[k+1] != b[i] {
+    		k = next[k]
+    	}
+    	if b[k+1] == b[i] {
+    		k++
+    	}
+    	next[i] = k 
+    }
+    return next
+}
+
+func main() {
+    a := "aabbabcacdwrsg"  
+    b := "sg"
+    ret := kmp(a,len(a),b,len(b))
+    fmt.Println(ret)
+}
+```
 
 
 
