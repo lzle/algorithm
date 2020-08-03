@@ -97,7 +97,112 @@ func main() {
 
 
 
+整合
+``` GO
+package main
 
+import "fmt"
+
+const SIZE = 256
+
+// 变量 b 是模式串，m 是模式串的长度。
+// bc 表示散列表。
+// 假设每个字符长度是 1 字节，用ascii码作为下标。
+func initBC(b string, m int) (bc []int) {
+	bc = make([]int, SIZE)
+	for i := 0; i < SIZE; i++ {
+		bc[i] = -1
+	}
+
+	for i := 0; i < m; i++ {
+		j := int(b[i])
+		bc[j] = i
+	}
+	return bc
+}
+
+func initGS(b string, m int) (suffix []int, prefix []bool) {
+	var (
+		j int;
+		k int;
+	)
+	suffix = make([]int, m)
+	prefix = make([]bool, m)
+	for i := 0; i < m; i++ {
+		suffix[i] = -1
+		prefix[i] = false
+	}
+
+	for i := 0; i < m-1; i++ {
+		j = i
+		k = 0
+		for j >= 0 && b[j] == b[m-1-k] {
+			k++
+			suffix[k] = j
+			j--
+		}
+		if j < 0 {
+			prefix[k] = true
+		}
+	}
+	return
+}
+
+// bm 算法，返回匹配字符串下班
+// a, b分别是主串和模式串；n, m分别是主串和模式串的长度。
+// 移动主串
+func bm(a string, n int, b string, m int) int {
+	var (
+		i int;
+		j int;
+	)
+	bc := initBC(b,m)
+	suffix, prefix := initGS(b, m)
+
+	for i <= n-m {
+		for j = m - 1; j >= 0; j-- {
+			if a[i+j] != b[j] {
+				break
+			}
+
+		}
+		if j < 0 {
+			return i
+		}
+		x :=  j - bc[int(a[i+j])]
+		y :=  moveByGS(m, j, suffix, prefix)
+		if x > y {
+			i = i + x
+		} else {
+			i = i + y
+		}
+	}
+	return -1
+}
+
+// j 等于不匹配字符模式串下标
+func moveByGS(m int, j int, suffix []int, prefix []bool) int {
+	k := m - 1 - j
+	if suffix[k] != -1 {
+		return j - suffix[k] + 1
+	} else {
+		for k > 0 {
+			if prefix[k] {
+				return m - k
+			}
+			k--
+		}
+	}
+	return m
+}
+
+func main() {
+	a := "aacabbbabcabcabcdwrsg"
+	b := "cabcab"
+	ret := bm(a, len(a), b, len(b))
+	fmt.Println(ret)
+}
+```
 
 
 
