@@ -88,16 +88,44 @@ func main() {
 }
 ```
 
+#### 好后缀规则
+
+下图，模式串和主串 `bc` 是匹配的，接下来的字符 `c` 不匹配。
+
+<img src="https://static001.geekbang.org/resource/image/d7/8a/d78990dbcb794d1aa2cf4a3c646ae58a.jpg" width=500>
+
+把已经匹配的 `bc` 叫作好后缀，记作{u}。在模式串的前缀中寻找，如果匹配的上，则直接滑动对齐。
+
+<img src="https://static001.geekbang.org/resource/image/b9/63/b9785be3e91e34bbc23961f67c234b63.jpg" width=500>
+
+不过，当模式串中不存在等于{u}的子串时，我们直接将模式串滑动到主串{u}的后面，会造成过度滑动。
+
+<img src="https://static001.geekbang.org/resource/image/9b/70/9b3fa3d1cd9c0d0f914a9b1f518ad070.jpg" width=500>
+
+不仅要看好后缀在模式串中，是否有另一个匹配的子串，我们还要考察`好后缀的后缀子串`，是否存在跟模式串的`前缀子串匹配`的。
+
+<img src="https://static001.geekbang.org/resource/image/6c/f9/6caa0f61387fd2b3109fe03d803192f9.jpg" width=500>
+
+好后缀的处理规则中最核心的内容：
+
+* `在模式串中，查找跟好后缀匹配的另一个子串；`
+
+* `在好后缀的后缀子串中，查找最长的、能跟模式串前缀子串匹配的后缀子串；`
+
+预先处理每个后缀子串，对应的另一个可匹配子串的位置；接下来的构建过程是算法的核心内容。
+
+引入最关键的变量 `suffix` 数组，`suffix` 数组的下标 `k`，表示后缀子串的长度，
+下标对应的数组值存储的是，在模式串中跟好后缀{u}相匹配的子串{u*}的起始下标值，如果存在多个匹配，
+存储最大的那个下标值。
+
+<img src="https://static001.geekbang.org/resource/image/99/c2/99a6cfadf2f9a713401ba8feac2484c2.jpg" width=500>
+
+如何记录记录模式串的 `后缀子串` 是否能匹配模式串的 `前缀子串` ？引入 `boolean` 类型的 `prefix` 数组。
+
+<img src="https://static001.geekbang.org/resource/image/27/83/279be7d64e6254dac1a32d2f6d1a2383.jpg" width=500>
 
 
-
-
-
-
-
-
-
-整合
+代码
 ``` GO
 package main
 
