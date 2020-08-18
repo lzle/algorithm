@@ -30,3 +30,4 @@ func main() {
 	Insertion(slice)
 	fmt.Println(slice)
 }
+
