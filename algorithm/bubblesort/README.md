@@ -39,35 +39,6 @@
 
 逆序度就是需要交互的次数，可以用逆序度来分析算法的复杂度，当然这是一种不严格的分析方式。
 
-#### 代码
-
-``` Go
-// 冒泡排序
-func Bubble(slice []int) {
-    for i := 1; i < len(slice); i++ {
-    	// 提前退出冒泡排序的标志
-    	flag := false
-    	for j := 0; j < len(slice)-i; j++ {
-    	    if slice[j] > slice[j+1] {
-    	    	slice[j], slice[j+1] = slice[j+1], slice[j]
-    	    	flag = true
-    	    }
-    	}
-    	if !flag {
-    		break
-    	}
-    }
-}
-
-func main() {
-    var slice []int
-    for i := 1; i <= 55; i++ {
-    	slice = append(slice, rand.Intn(1000))
-    }
-    Bubble(slice)
-    fmt.Println(slice)
-}
-```
 
 #### 复杂度
 
