@@ -32,7 +32,7 @@ BM 算法的匹配顺序按照模式串下标从大到小的顺序，倒着匹�
 针对怀字符规则做预处理，可以将模式串中的每个字符及其下标都存到散列表中。这样就可以快速找到坏字符
 在模式串的位置下标了。
 
-坏字符串规则
+#### 代码
 ``` Go
 package main
 
@@ -125,7 +125,7 @@ func main() {
 <img src="https://static001.geekbang.org/resource/image/27/83/279be7d64e6254dac1a32d2f6d1a2383.jpg" width=500>
 
 
-代码
+#### 代码
 ``` GO
 package main
 
