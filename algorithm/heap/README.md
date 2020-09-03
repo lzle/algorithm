@@ -1,6 +1,4 @@
-# 堆与堆排序
-
-堆排序是一种原地的、不稳定的、时间复杂度为 O(nlogn) 的排序算法。
+# 堆
 
 堆是一种特殊的树，只要满足这两点，它就是一个堆。
 
@@ -93,9 +91,14 @@ private void heapify(int[] a, int n, int i) { // 自上往下堆化
 往堆中插入一个元素和删除堆顶元素的时间复杂度都是 O(logn)。
 
 
-### 堆排序
+# 堆排序
+
+堆排序是一种原地的、非稳定的、时间复杂度为 O(nlogn) 的排序算法。
 
 堆排序的过程大致分解成两个大的步骤，`建堆`和`排序`。
+
+
+### 建堆
 
 第一种思路是假设一开始堆中只有 1 个元素，下标为 1 ，其他元素依次进行上面的插入操作。
 
@@ -105,7 +108,7 @@ private void heapify(int[] a, int n, int i) { // 自上往下堆化
 
 <img src="https://static001.geekbang.org/resource/image/aa/9d/aabb8d15b1b92d5e040895589c60419d.jpg" width=500>
 
-代码如下
+实现过程
 
 ``` java
 private static void buildHeap(int[] a, int n) {
@@ -128,12 +131,50 @@ private static void heapify(int[] a, int n, int i) {
 
 建堆过程的复杂度是多少呢？
 
+因为叶子节点不需要堆化，所以需要堆化的节点从倒数第二层开始。每个节点堆化的过程中，需要比较和交换的节点个数，跟这个节点的高度 k 成正比。
+
+<img src="https://static001.geekbang.org/resource/image/89/d5/899b9f1b40302c9bd5a7f77f042542d5.jpg" width=500>
+
+高度求和公式
+
+<img src="https://static001.geekbang.org/resource/image/f7/09/f712f8a7baade44c39edde839cefcc09.jpg" width=500>
+
+这个公式的求解稍微有点技巧，不过我们高中应该都学过：把公式左右都乘以 2，就得到另一个公式 S2。我们将 S2 错位对齐，并且用 S2 减去 S1，可以得到 S。
+
+<img src="https://static001.geekbang.org/resource/image/62/df/629328315decd96e349d8cb3940636df.jpg" width=500>
+
+利用等比数列求和公式
+
+<img src="https://static001.geekbang.org/resource/image/46/36/46ca25edc69b556b967d2c62388b7436.jpg" width=500>
+
+因为 h=log2​n，代入公式 S，就能得到 S=O(n)，所以，建堆的时间复杂度就是 O(n)。
 
 
+### 排序
 
+建堆结束之后，数组中的数据已经是按照大顶堆的特性来组织的。数组中的第一个元素就是堆顶，也就是最大的元素。
+我们把它跟最后一个元素交换，那最大元素就放到了下标为 n 的位置。
 
+这个过程有点类似上面讲的“删除堆顶元素”的操作，当堆顶元素移除之后，我们把下标为 n 的元素放到堆顶，然后
+再通过堆化的方法，将剩下的 n−1 个元素重新构建成堆。堆化完成之后，我们再取堆顶的元素，放到下标是 n−1 
+的位置，一直重复这个过程，直到最后堆中只剩下标为 1 的一个元素，排序工作就完成了。
 
+<img src="https://static001.geekbang.org/resource/image/23/d1/23958f889ca48dbb8373f521708408d1.jpg" width=500>
 
+实现过程
+
+``` java
+// n表示数据的个数，数组a中的数据从下标1到n的位置。
+public static void sort(int[] a, int n) {
+  buildHeap(a, n);
+  int k = n;
+  while (k > 1) {
+    swap(a, 1, k);
+    --k;
+    heapify(a, k, 1);
+  }
+}
+```
 
 
 
