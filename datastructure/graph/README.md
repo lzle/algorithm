@@ -10,10 +10,21 @@
 
 存储方式：
 
-* `邻接矩阵存储方法`
-* `邻接表存储方法`
+* 邻接矩阵存储方法
 
-#### 邻接矩阵存储方法
+* 邻接表存储方法
+
+涉及算法：
+
+* 图的搜索（深度优先搜索、广度优先搜索、A*、IDA* 启发式搜索）
+
+* 最短路径
+
+* 最小生成树
+
+* 二分图
+
+### 邻接矩阵
 
 邻接矩阵是最`直观`的存储方式。
 
@@ -27,7 +38,7 @@
 缺点：
 * `浪费空间，不适用于顶点过多的图。`
 
-#### 邻接表存储方法
+### 邻接表
 
 顶点存储的是一条链表。
 
@@ -37,16 +48,25 @@
 
 链表改成`平衡二叉查找树`，实际中可以使用`红黑树`，也可以换成`跳表`、`散列表`。除此之外，有序`动态数组`。
 
+### BFS/DFS
+
+1）[深度优先](https://github.com/lzle/algorithm/blob/master/datastructure/graph/graph.go) :lemon:
+
+2）[广度优先](https://github.com/lzle/algorithm/blob/master/datastructure/graph/graph.go) :lemon:
+
+
+广度优先搜索和深度优先搜索是图上的两种最常用、最基本的搜索算法。比起其他高级的搜索算法，比如 A*、IDA* 等，
+要简单粗暴，没有什么优化，所以，也被叫作暴力搜索算法。所以，这两种搜索算法仅适用于状态空间不大，也就是说图不大的搜索。
+
+其中`深度优先搜索`找出来的路径，并`不是`顶点 s 到顶点 t 的`最短路径`。
+
+在执行效率方面，深度优先和广度优先搜索的时间复杂度都是 `O(E)`，空间复杂度是 `O(V)`。
+
 
 ### 思考 🤔
 
 1）如何存储微博、微信等社交网络中的好友关系？
 
-### 练习
-
-1）[深度优先](https://github.com/lzle/algorithm/blob/master/datastructure/graph/graph.go) :apple:
-
-2）[广度优先](https://github.com/lzle/algorithm/blob/master/datastructure/graph/graph.go) :apple:
 
 ### 解答
 
