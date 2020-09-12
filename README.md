@@ -18,7 +18,7 @@
 
 > 有向图、无向图、带权图、邻接矩阵、邻接表
 
-##### 算法
+#### 相关
 
 * [深度优先搜索](https://github.com/lzle/algorithm/blob/master/datastructure/graph/graph.go)
 
