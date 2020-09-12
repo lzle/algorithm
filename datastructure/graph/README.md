@@ -38,17 +38,17 @@
 链表改成`平衡二叉查找树`，实际中可以使用`红黑树`，也可以换成`跳表`、`散列表`。除此之外，有序`动态数组`。
 
 
-## 思考 🤔
+### 思考 🤔
 
 1）如何存储微博、微信等社交网络中的好友关系？
 
-## 练习
+### 练习
 
 1）[深度优先](https://github.com/lzle/algorithm/blob/master/datastructure/graph/graph.go) :apple:
 
 2）[广度优先](https://github.com/lzle/algorithm/blob/master/datastructure/graph/graph.go) :apple:
 
-## 解答
+### 解答
 
 1） `以微博为例，除了有关注的人，还有粉丝，所以需要建立逆邻接表。将邻接表中的链表改成跳表。跳表插入、删除、查找都非常高效，
 时间复杂度是 O(logn)，空间复杂度上稍高，是 O(n)。数据量太大，内存存储不下，可以使用一致性哈希进行数据分片。
