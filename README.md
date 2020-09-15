@@ -37,3 +37,15 @@
 ### BF&RK
 
 ### BM
+
+### [回溯](https://github.com/lzle/algorithm/tree/master/algorithm/backtrack)
+
+> 枚举、递归
+
+#### 算法
+
+* [八皇后](https://github.com/lzle/algorithm/blob/master/algorithm/backtrack/8queens.go)
+
+* [0-1背包](https://github.com/lzle/algorithm/blob/master/algorithm/backtrack/0-1knapsack.go)
+
+* [正则表达式](https://github.com/lzle/algorithm/blob/master/algorithm/backtrack/regular.go)
