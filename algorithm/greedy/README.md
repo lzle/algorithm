@@ -68,6 +68,7 @@
 ### 霍夫曼编码
 
 [维基百科](https://zh.wikipedia.org/wiki/%E9%9C%8D%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81)
+[编码实现](https://github.com/lzle/algorithm/tree/master/algorithm/huffmancoding)
 
 《数据结构与算法分析》书中是这样说的，"该算法是贪婪算法的原因在于，在每一阶段我们都进行一次合并而没有
 进行全局的考虑。我们只是选择两颗最小的树。"
