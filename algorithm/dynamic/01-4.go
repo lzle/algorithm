@@ -12,7 +12,6 @@ func knapsack4(weight []int,value []int, n int, w int) int{
 	if weight[0] < w {
 		states[weight[0]] = value[0]
 	}
-
 	for i:=1; i<n; i++ {
 		// 不放
 		for j := w - weight[i]; j >= 0; j-- {
@@ -32,7 +31,6 @@ func knapsack4(weight []int,value []int, n int, w int) int{
 			maxV = states[i]
 		}
 	}
-
 	return maxV
 }
 

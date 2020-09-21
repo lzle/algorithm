@@ -10,6 +10,7 @@ func knapsack2(weight []int, n int, w int) int{
 		states[weight[0]] = true
 	}
 	for i:=1; i<n; i++ {
+		// j 需要从大到小来处理
 		for j:= w-weight[i]; j>=0; j-- {
 			if states[j]{
 				states[j+weight[i]] = true
