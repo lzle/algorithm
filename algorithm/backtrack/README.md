@@ -8,7 +8,7 @@
 回溯算法非常适合用递归来实现，在实现的过程中，剪枝操作是提高回溯效率的一种技巧。
 利用剪枝，我们并不需要穷举搜索所有的情况，从而提高搜索效率。
 
-很多经典的数学问题都可以用回溯算法解决，比如[数独](https://github.com/lzle/leetcode/tree/master/note/37)、八皇后、0-1 背包、图的着色、旅行商问题、全排列等等。
+很多经典的数学问题都可以用回溯算法解决，比如[数独](https://github.com/lzle/leetcode/tree/master/note/37)、八皇后、0-1 背包、图的着色、旅行商问题、[全排列](https://github.com/lzle/leetcode/tree/master/note/46)等等。
 
 ### 八皇后问题
 
