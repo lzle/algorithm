@@ -52,6 +52,8 @@
 
 * [数独](https://github.com/lzle/leetcode/tree/master/note/37)
 
+* [全排列](https://github.com/lzle/leetcode/tree/master/note/46)
+
 ### [贪心算法](https://github.com/lzle/algorithm/tree/master/algorithm/greedy)
 
 > 利用局部最优解，在对限制值同等贡献量的情况下，选择对期望值贡献最大的数据。
