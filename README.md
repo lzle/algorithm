@@ -14,7 +14,7 @@
 
 ### 红黑树 
 
-### [图](https://github.com/lzle/algorithm/tree/master/datastructure/graph)
+### 图
 
 > 有向图、无向图、带权图、邻接矩阵、邻接表
 
@@ -38,7 +38,7 @@
 
 ### BM
 
-### [回溯](https://github.com/lzle/algorithm/tree/master/algorithm/backtrack)
+### 回溯
 
 > 枚举、递归
 
@@ -54,7 +54,7 @@
 
 * [全排列](https://github.com/lzle/leetcode/tree/master/note/46)
 
-### [贪心算法](https://github.com/lzle/algorithm/tree/master/algorithm/greedy)
+### 贪心算法
 
 > 利用局部最优解，在对限制值同等贡献量的情况下，选择对期望值贡献最大的数据。
 
