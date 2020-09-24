@@ -18,7 +18,7 @@
 
 * [广度优先搜索](https://github.com/lzle/algorithm/blob/master/datastructure/graph/graph.go)
 
-* [拓扑排序](https://github.com/lzle/algorithm/tree/master/algorithm/topological)
+* [拓扑排序( Kahn算法 )](https://github.com/lzle/algorithm/tree/master/algorithm/topological)
 
 ## 算法
 
