@@ -24,6 +24,8 @@
 
 * [广度优先搜索](https://github.com/lzle/algorithm/blob/master/datastructure/graph/graph.go)
 
+* [拓扑排序](https://github.com/lzle/algorithm/tree/master/algorithm/topological)
+
 > 深度优先和广度优先搜索的时间复杂度都是 O(E)，空间复杂度是 O(V)。深度优先搜索的并不是最短路径。
 
 # 算法
