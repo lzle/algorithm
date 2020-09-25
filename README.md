@@ -20,6 +20,8 @@
 
 * [拓扑排序( Kahn算法 )](https://github.com/lzle/algorithm/tree/master/algorithm/topological)
 
+* [Dijkstra算法](algorithm/dijkstra)
+
 ## 算法
 
 #### 递归
