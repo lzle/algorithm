@@ -1,50 +1,40 @@
-# 数据结构
+## 数据结构
 
-### 数组
+#### 数组
 
-### 链表
+#### 链表
 
-### 跳表
+#### 跳表
 
-### 栈
+#### 栈
 
-### 队列
+#### 队列
 
-### 二叉树
+#### 树
 
-### 红黑树 
-
-### 图
-
-> 有向图、无向图、带权图、邻接矩阵、邻接表
-
-#### 相关
+#### 图
 
 * [深度优先搜索](https://github.com/lzle/algorithm/blob/master/datastructure/graph/graph.go)
 
 * [广度优先搜索](https://github.com/lzle/algorithm/blob/master/datastructure/graph/graph.go)
 
-* [拓扑排序](https://github.com/lzle/algorithm/tree/master/algorithm/topological)
+* [拓扑排序( Kahn算法 )](https://github.com/lzle/algorithm/tree/master/algorithm/topological)
 
-> 深度优先和广度优先搜索的时间复杂度都是 O(E)，空间复杂度是 O(V)。深度优先搜索的并不是最短路径。
+## 算法
 
-# 算法
+#### 递归
 
-### 递归
+#### 哈希
 
-### 哈希
+#### 字符匹配
 
-### KMP
+* [KMP](https://github.com/lzle/algorithm/tree/master/algorithm/kmp)
 
-### BF&RK
+* [BF&RK](https://github.com/lzle/algorithm/tree/master/algorithm/bf%26rk)
 
-### BM
+* [BM](https://github.com/lzle/algorithm/tree/master/algorithm/bm)
 
-### 回溯
-
-> 枚举、递归
-
-#### 相关
+#### 回溯
 
 * [八皇后](https://github.com/lzle/algorithm/blob/master/algorithm/backtrack/8queens.go)
 
@@ -56,11 +46,7 @@
 
 * [全排列](https://github.com/lzle/leetcode/tree/master/note/46)
 
-### 贪心算法
-
-> 利用局部最优解，在对限制值同等贡献量的情况下，选择对期望值贡献最大的数据。
-
-#### 相关
+#### 贪心算法
 
 * [霍夫曼编码](https://github.com/lzle/algorithm/tree/master/algorithm/greedy)
 
