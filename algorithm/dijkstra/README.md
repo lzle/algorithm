@@ -13,45 +13,44 @@
 ```cgo
 // 从顶点s到顶点t的最短路径
 func dijkstra(s int, t int, g *Graph){
-	predecessor := make([]int, g.v)
-	vertexes := make([]*Vertex, g.v)
-	for i:=0; i<g.v; i++ {
-		vertexes[i] = &Vertex{i, int(^uint(0) >> 1)}
-	}
-	queue := newPriorityQueue(g.v)
-	inqueue := make([]bool,g.v)
-	vertexes[s].dist = 0
-	queue.add(vertexes[s])
-	inqueue[s] = true
-	for !queue.isEmpty() {
-		minVertex := queue.poll()
-		if minVertex.id == t {
-			break
-		}
-		for i:=0; i<len(g.linkedList[minVertex.id]); i++ {
-			edge := g.linkedList[minVertex.id][i]
-			nextVertex := vertexes[edge.tid]
-			if minVertex.dist + edge.w < nextVertex.dist {
-				nextVertex.dist = minVertex.dist + edge.w
-				predecessor[nextVertex.id] = minVertex.id
-				if inqueue[nextVertex.id] {
-					queue.update(nextVertex)
-				} else {
-					queue.add(nextVertex)
-					inqueue[nextVertex.id] = true
-				}
-			}
-		}
-	}
-
-	var f func(s int, t int)
-	f = func(s int, t int) {
-		if s != t {
-			f(s, predecessor[t])
-		}
-		fmt.Println(t)
-	}
-	f(s,t)
+    predecessor := make([]int, g.v)
+    vertexes := make([]*Vertex, g.v)
+    for i:=0; i<g.v; i++ {
+        vertexes[i] = &Vertex{i, int(^uint(0) >> 1)}
+    }
+    queue := newPriorityQueue(g.v)
+    inqueue := make([]bool,g.v)
+    vertexes[s].dist = 0
+    queue.add(vertexes[s])
+    inqueue[s] = true
+    for !queue.isEmpty() {
+        minVertex := queue.poll()
+        if minVertex.id == t {
+            break
+        }
+        for i:=0; i<len(g.linkedList[minVertex.id]); i++ {
+            edge := g.linkedList[minVertex.id][i]
+            nextVertex := vertexes[edge.tid]
+            if minVertex.dist + edge.w < nextVertex.dist {
+                nextVertex.dist = minVertex.dist + edge.w
+                predecessor[nextVertex.id] = minVertex.id
+                if inqueue[nextVertex.id] {
+                    queue.update(nextVertex)
+                } else {
+                    queue.add(nextVertex)
+                    inqueue[nextVertex.id] = true
+                }
+            }
+        }
+    }
+    var f func(s int, t int)
+    f = func(s int, t int) {
+        if s != t {
+            f(s, predecessor[t])
+        }
+        fmt.Println(t)
+    }
+    f(s,t)
 }
 ```
 
