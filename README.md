@@ -22,6 +22,8 @@
 
 * [Dijkstra算法](algorithm/dijkstra)
 
+* [A*算法](algorithm/a*)
+
 #### 位图
 
 * [布隆过滤器](datastructure/bitmap)
