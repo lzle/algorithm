@@ -129,14 +129,3 @@ func astar(s int, t int, g *Graph){
 	}
 	f(s,t)
 }
-
-
-
-
-
-
-
-
-
-
-
