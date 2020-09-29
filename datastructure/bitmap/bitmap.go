@@ -32,7 +32,6 @@ func newBitMap(n int) *BitMap {
 	return bm
 }
 
-
 func main() {
 	bm := newBitMap(100)
 	fmt.Println(bm.bytes)

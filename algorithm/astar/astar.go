@@ -1,8 +1,7 @@
-package main
+package astar
 
 import (
 	"fmt"
-	"github.com/gin-gonic/gin/render"
 	"math"
 )
 
