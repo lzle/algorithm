@@ -18,6 +18,8 @@
 
 * [完全二叉树](datastructure/binarytree)
 
+* [二叉查找树](datastructure/binarytree)
+
 #### 图
 
 * [深度优先搜索](datastructure/graph/graph.go)
