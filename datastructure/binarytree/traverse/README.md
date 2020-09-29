@@ -2,7 +2,7 @@
 
 #### 二叉树
 
-<img src="full.jpg" width=500>
+<img src="full.jpg" width=250>
 
 前序遍历 A-B-D-F-G-H-I-E-C
 
@@ -16,21 +16,21 @@
 
 在前序遍历中，确定根节点为A，从中序遍历得出F-D-H-G-I-B-E在左边，C在根节点右边。
 
-<img src="1.png" width=500>
+<img src="1.png" width=150>
 
 那么剩下的前序遍历为B-D-F-G-H-I-E，中序遍历为F-D-H-G-I-B-E，B就是我们新的"根结点"，从中序遍历中得出F-D-H-G-I
 在B的左边，E在B的右边，继续构建。
 
-<img src="2.jpg" width=500>
+<img src="2.jpg" width=200>
 
 那么剩下的前序遍历为D-F-G-H-I，中序遍历为F-D-H-G-I，D就是我们新的"根结点"，从中序遍历中得出F在D的左边，H-G-I在
 D的右边，继续构建。
 
-<img src="3.jpg" width=500>
+<img src="3.jpg" width=230>
 
 那么剩下的前序遍历为G-H-I，中序遍历为H-G-I，G就是我们新的"根结点"，从中序遍历中得出H在G的左边，I在G的右边。
 
-<img src="4.jpg" width=500>
+<img src="4.jpg" width=250>
 
 #### 后序、中序还原
 
