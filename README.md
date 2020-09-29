@@ -20,7 +20,9 @@
 
 * [二叉查找树](datastructure/binarytree)
 
-* [前序、中序、后序遍历](datastructure/binarytree/traverse)
+* [二叉树遍历](datastructure/binarytree/traverse)
+
+* [堆、堆排](datastructure/heap)
 
 #### 图
 
