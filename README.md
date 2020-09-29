@@ -20,6 +20,8 @@
 
 * [二叉查找树](datastructure/binarytree)
 
+* [前序、中序、后序遍历](datastructure/binarytree/traverse)
+
 #### 图
 
 * [深度优先搜索](datastructure/graph/graph.go)
