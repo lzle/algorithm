@@ -2,6 +2,8 @@
 
 #### 数组
 
+* [数组](datastructure/array)
+
 #### 链表
 
 #### 跳表
