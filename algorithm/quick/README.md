@@ -60,5 +60,6 @@ partition(A, p, r) {
 
 > 思路 partition 函数返回下标。
 
+2）为何是不稳定的？
 
 
