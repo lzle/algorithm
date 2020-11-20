@@ -36,6 +36,8 @@
 
 * [堆、堆排](datastructure/heap)
 
+* [红黑树](datastructure/rbtree)
+
 #### 图
 
 * [深度优先搜索](datastructure/graph/graph.go)
@@ -47,6 +49,7 @@
 * [Dijkstra算法](algorithm/dijkstra)
 
 * [A*算法](algorithm/a*)
+
 
 #### 位图
 
