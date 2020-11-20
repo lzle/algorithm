@@ -6,11 +6,21 @@
 
 #### 链表
 
+* [单向链表](datastructure/linkedlist)
+
+* [双向链表](datastructure/linkedlist)
+
 #### 跳表
+
+* [跳表](datastructure/skiplist)
 
 #### 栈
 
+* [栈](datastructure/stack)
+
 #### 队列
+
+* [队列](datastructure/queue)
 
 #### 树
 
