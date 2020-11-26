@@ -45,7 +45,7 @@
 
 4）[有效的括号](https://github.com/lzle/leetcode/tree/master/note/20) :green_apple:
 
-4）[最长有效的括号](https://github.com/lzle/leetcode/tree/master/note/206) :apple:
+4）[最长有效的括号](https://github.com/lzle/leetcode/tree/master/note/32) :apple:
 
 5）[逆波兰表达式求值](https://github.com/lzle/leetcode/tree/master/note/150) :lemon:
 
