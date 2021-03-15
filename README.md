@@ -65,6 +65,12 @@
 
 * [插入排序](algorithm/insertion) 
 
+* [归并排序](algorithm/merge) 
+
+* [快速排序](algorithm/quick) 
+
+* [线性排序](algorithm/linear) 
+
 #### 字符匹配
 
 * [KMP](algorithm/kmp)
