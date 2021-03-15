@@ -79,19 +79,11 @@
 
 * [BM](algorithm/bm)
 
-#### 回溯
+#### 其他
 
-* [八皇后](algorithm/backtrack/8queens.go)
+* [回溯](algorithm/backtrack)
 
-* [0-1背包](algorithm/backtrack/0-1knapsack.go)
-
-* [正则表达式](algorithm/backtrack/regular.go)
-
-* [数独](https://github.com/lzle/leetcode/tree/master/note/37)
-
-* [全排列](https://github.com/lzle/leetcode/tree/master/note/46)
-
-#### 贪心算法
+* [布隆过滤器](datastructure/bitmap)
 
 * [霍夫曼编码](algorithm/greedy)
 
