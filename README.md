@@ -57,9 +57,13 @@
 
 ## 算法
 
-#### 递归
+#### 排序
 
-#### 哈希
+* [冒泡排序](algorithm/bubble)
+
+* [选择排序](algorithm/selection) 
+
+* [插入排序](algorithm/insertion) 
 
 #### 字符匹配
 
