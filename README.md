@@ -71,6 +71,8 @@
 
 * [线性排序](algorithm/linear) 
 
+* [堆排序](datastructure/heap)
+
 #### 字符匹配
 
 * [KMP](algorithm/kmp)
