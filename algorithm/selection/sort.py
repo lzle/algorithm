@@ -2,14 +2,13 @@ import random
 
 
 def selection(list):
-    num = len(list)
+    nums = len(list)
 
-    for i in range(num - 1):
+    for i in range(nums-1):
         min = i
-
-        for j in range(1, num - i):
-            if list[j + i] < list[min]:
-                min = j + i
+        for j in range(i+1, nums):
+            if list[j] < list[min]:
+                min = j
 
         list[i], list[min] = list[min], list[i]
 
