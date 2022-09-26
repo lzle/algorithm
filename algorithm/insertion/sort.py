@@ -7,13 +7,13 @@ def insertion(list):
     for i in range(1, num):
         curr = list[i]
         flag = i
-        for j in range(i-1, -1, -1):
+        for j in range(i - 1, -1, -1):
             if curr >= list[j]:
                 break
-            list[j+1] = list[j]
+            list[j + 1] = list[j]
             flag = j
 
-        if flag != i :
+        if flag != i:
             list[flag] = curr
 
 
